@@ -10,7 +10,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 COPY "pyproject.toml" "uv.lock" ".python-version" ./
 RUN uv sync --locked --no-dev
 
-COPY "predict.py" "pipeline_v1.bin" ./
+COPY "predict.py" "pipeline_v1.bin"./
 
 EXPOSE 9696
 
